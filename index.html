@@ -5,10 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day #11. Ultimate tic-tac-toe</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <main class="panel">
+            <section class="info">
+                <h2 id="globalTurn">Global turn: X</h2>
+                <h3 id="boardId">Board: Main</h3>
+                <h3 id="localTurn">Local turn: X</h3>
+            </section>
+            <section class="grid">
+                <div class="row">
+                    <button class="cell" onclick="updateBoard(1)">1</button>
+                    <button class="cell" onclick="updateBoard(2)">2</button>
+                    <button class="cell" onclick="updateBoard(3)">3</button>
+                </div>
+                <div class="row">
+                    <button class="cell" onclick="updateBoard(4)">4</button>
+                    <button class="cell" onclick="updateBoard(5)">5</button>
+                    <button class="cell" onclick="updateBoard(6)">6</button>
+                </div>
+                <div class="row">
+                    <button class="cell" onclick="updateBoard(7)">7</button>
+                    <button class="cell" onclick="updateBoard(8)">8</button>
+                    <button class="cell" onclick="updateBoard(9)">9</button>
+                </div>
+            </section>
+        </main>
+    </div>
 
-    <script src="main.js"></script>
 </body>
 </html>
